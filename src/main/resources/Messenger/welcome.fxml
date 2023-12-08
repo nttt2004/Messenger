@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="chatPane" prefHeight="609.0" prefWidth="380.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Messenger.Welcome">
+   <children>
+      <Label layoutX="161.0" layoutY="21.0" text="Chats">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="329.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@edit1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchField" layoutX="14.0" layoutY="59.0" prefHeight="30.0" prefWidth="342.0" promptText="Search" style="-fx-background-color: #dddddd; -fx-background-radius: 8;">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="329.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@search.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="549.0" prefHeight="58.0" prefWidth="380.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@chat.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="34.0" layoutY="44.0" text="Chats" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="126.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@call.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="123.0" layoutY="44.0" text="Calls" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="221.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@people.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="218.0" layoutY="44.0" text="People" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="312.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stories.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="309.0" layoutY="44.0" text="Stories" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="13.0" layoutY="112.0" prefHeight="58.0" prefWidth="65.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@main.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="28.0" layoutY="170.0" text="Your note">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="9.0" layoutY="110.0" prefHeight="20.0" prefWidth="39.0" style="-fx-border-color: black; -fx-border-radius: 6; -fx-background-color: white; -fx-background-radius: 6;" text="Hehehe" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="emilyButton1" layoutX="88.0" layoutY="112.0" onAction="#emilyButtonOnAction" prefHeight="58.0" prefWidth="65.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@test.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="170.0" prefHeight="11.0" prefWidth="39.0" text="Emily" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="84.0" layoutY="110.0" prefHeight="20.0" prefWidth="39.0" style="-fx-border-color: black; -fx-border-radius: 6; -fx-background-color: white; -fx-background-radius: 6;" text="Hello" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="SuhoButton" layoutX="166.0" layoutY="112.0" onAction="#SuhoButtonOnAction" prefHeight="58.0" prefWidth="65.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@suho.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="181.0" layoutY="170.0" prefHeight="11.0" prefWidth="39.0" text="Suho" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="148.0" layoutY="110.0" prefHeight="20.0" prefWidth="57.0" style="-fx-border-color: black; -fx-border-radius: 6; -fx-background-color: white; -fx-background-radius: 6;" text="Handsome :)" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="AntifanButton1" layoutX="240.0" layoutY="112.0" onAction="#AntifanButtonOnAction" prefHeight="58.0" prefWidth="65.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@md.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="256.0" layoutY="170.0" prefHeight="11.0" prefWidth="39.0" text="Antifan" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <Circle fill="#90ff1f" layoutX="60.0" layoutY="159.0" radius="5.0" strokeType="INSIDE" />
+      <Circle fill="#90ff1f" layoutX="135.0" layoutY="159.0" radius="5.0" strokeType="INSIDE" />
+      <Circle fill="#90ff1f" layoutX="214.0" layoutY="159.0" radius="5.0" strokeType="INSIDE" />
+      <JFXButton fx:id="emilyButton2" layoutX="8.0" layoutY="195.0" onAction="#emilyButtonOnAction" prefHeight="58.0" prefWidth="65.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@test.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="74.0" layoutY="207.0" prefHeight="16.0" prefWidth="71.0" text="Emily">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="224.0" prefHeight="17.0" prefWidth="137.0" text="See ya!" />
+      <Label layoutX="121.0" layoutY="225.0" text="11:11 pm" textFill="SILVER">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="AntifanButton2" layoutX="8.0" layoutY="261.0" onAction="#AntifanButtonOnAction" prefHeight="58.0" prefWidth="65.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@md.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="74.0" layoutY="273.0" prefHeight="16.0" prefWidth="71.0" text="Antifan">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="290.0" prefHeight="17.0" prefWidth="137.0" text="I don't care." />
+      <Label layoutX="147.0" layoutY="291.0" text="11:00 pm" textFill="SILVER">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

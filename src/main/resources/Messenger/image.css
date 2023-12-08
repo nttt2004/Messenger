@@ -1,0 +1,4 @@
+.circular-image-view {
+    -fx-background-radius: 50%;
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="chatPane" prefHeight="609.0" prefWidth="380.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Messenger.Antifan">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="43.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@md.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="#90ff1f" layoutX="82.0" layoutY="57.0" radius="5.0" strokeType="INSIDE" />
+      <Label layoutX="96.0" layoutY="26.0" prefHeight="16.0" prefWidth="71.0" text="Antifan">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="43.0" prefHeight="17.0" prefWidth="137.0" text="Active now" />
+      <Label alignment="CENTER" layoutX="141.0" layoutY="86.0" prefHeight="24.0" prefWidth="113.0" text="TODAY 10:58 PM" textFill="SILVER">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="returnButton" layoutX="3.0" layoutY="20.0" onAction="#returnButtonOnAction" prefHeight="38.0" prefWidth="43.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@prev.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="226.0" layoutY="116.0" prefHeight="30.0" prefWidth="113.0" style="-fx-border-radius: 10; -fx-background-color: #0099ff; -fx-background-radius: 10; -fx-border-color: white;" text="You should not say that" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="255.0" layoutY="157.0" prefHeight="30.0" prefWidth="84.0" style="-fx-border-radius: 10; -fx-background-color: #0099ff; -fx-background-radius: 10; -fx-border-color: white;" text="She will be hurt" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="202.0" prefHeight="30.0" prefWidth="62.0" style="-fx-border-radius: 10; -fx-background-color: #ff99cc; -fx-background-radius: 10; -fx-border-color: white;" text="I don't care" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial" size="9.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="CallButton" layoutX="240.0" layoutY="20.0" onAction="#CallButtonOnAction" prefHeight="38.0" prefWidth="34.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@call2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="VideoButton" layoutX="292.0" layoutY="20.0" onAction="#VideoButtonOnAction" prefHeight="38.0" prefWidth="34.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@call.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutY="546.0" prefHeight="83.0" prefWidth="382.0">
+         <children>
+            <JFXButton fx:id="imageButton" layoutX="14.0" layoutY="23.0" onAction="#imageButtonOnAction" prefHeight="38.0" prefWidth="34.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <TextField fx:id="messageField" layoutX="63.0" layoutY="27.0" prefHeight="30.0" prefWidth="207.0" promptText="Your Message..." style="-fx-border-color: black; -fx-background-radius: 8; -fx-border-radius: 8;">
+               <font>
+                  <Font name="Arial Bold" size="10.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="giveButton" layoutX="272.0" layoutY="23.0" onAction="#giveButtonOnAction" prefHeight="38.0" prefWidth="34.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@give.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="speakButton" layoutX="323.0" layoutY="23.0" onAction="#speakButtonOnAction" prefHeight="38.0" prefWidth="34.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@micro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

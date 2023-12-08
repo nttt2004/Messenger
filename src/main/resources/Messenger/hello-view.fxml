@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainpane" prefHeight="666.0" prefWidth="400.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black; -fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Messenger.HelloController">
+   <children>
+      <Label fx:id="timeLabel" layoutX="24.0" layoutY="14.0" text="11:11">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="299.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@song.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="325.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@wifi.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="352.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@battery.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="chatPane" layoutX="10.0" layoutY="42.0" prefHeight="609.0" prefWidth="380.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="160.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@messenger.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="176.0" layoutY="491.0" text="from">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="154.0" layoutY="508.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@meta.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="189.0" layoutY="513.0" text="Meta">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="startButton" layoutX="167.0" layoutY="559.0" onAction="#startButtonOnAction" style="-fx-border-color: blue; -fx-border-radius: 8; -fx-background-color: #dddddd; -fx-background-radius: 8;" text="START">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
